@@ -10,6 +10,27 @@
 		8B6B2E672058862E00B13CAA /* BinanceWSApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E5D2058862E00B13CAA /* BinanceWSApi.framework */; };
 		8B6B2E6C2058862E00B13CAA /* BinanceWSApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E6B2058862E00B13CAA /* BinanceWSApiTests.swift */; };
 		8B6B2E6E2058862E00B13CAA /* BinanceWSApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6B2E602058862E00B13CAA /* BinanceWSApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B6B2E8B20588BB000B13CAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8A20588BB000B13CAA /* CoreData.framework */; };
+		8B6B2E8C20588BB400B13CAA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8620588ADC00B13CAA /* Starscream.framework */; };
+		8B6B2E8E20588BD600B13CAA /* BinanceWSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */; };
+		8B6B2E9020588BE600B13CAA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E8F20588BE600B13CAA /* Base.swift */; };
+		8B6B2EA720589C8300B13CAA /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EA620589C8300B13CAA /* DataHandler.swift */; };
+		8B6B2EA92058A96D00B13CAA /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EA82058A96D00B13CAA /* DataTypes.swift */; };
+		8B6B2EAB2058ADD200B13CAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EAA2058ADD200B13CAA /* Extensions.swift */; };
+		8B6B2EAD2058B46600B13CAA /* snippets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6B2EAC2058B46600B13CAA /* snippets */; };
+		8B6B2EFA2058FC2900B13CAA /* BinanceWSApi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EF82058FC2900B13CAA /* BinanceWSApi.xcdatamodeld */; };
+		8B88501320590CCB00BF811F /* BinanceEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500720590CC700BF811F /* BinanceEvent+CoreDataProperties.swift */; };
+		8B88501420590CCB00BF811F /* Kline+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500820590CC700BF811F /* Kline+CoreDataProperties.swift */; };
+		8B88501520590CCB00BF811F /* BinanceEventTickerAll+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500920590CC700BF811F /* BinanceEventTickerAll+CoreDataClass.swift */; };
+		8B88501620590CCB00BF811F /* Kline+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500A20590CC800BF811F /* Kline+CoreDataClass.swift */; };
+		8B88501720590CCB00BF811F /* BinanceEventKLine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500B20590CC800BF811F /* BinanceEventKLine+CoreDataProperties.swift */; };
+		8B88501820590CCB00BF811F /* BinanceEventAggTrade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500C20590CC900BF811F /* BinanceEventAggTrade+CoreDataProperties.swift */; };
+		8B88501920590CCB00BF811F /* BinanceEventTicker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500D20590CC900BF811F /* BinanceEventTicker+CoreDataProperties.swift */; };
+		8B88501A20590CCB00BF811F /* BinanceEventTickerAll+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500E20590CC900BF811F /* BinanceEventTickerAll+CoreDataProperties.swift */; };
+		8B88501B20590CCB00BF811F /* BinanceEventTicker+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500F20590CCA00BF811F /* BinanceEventTicker+CoreDataClass.swift */; };
+		8B88501C20590CCB00BF811F /* BinanceEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88501020590CCA00BF811F /* BinanceEvent+CoreDataClass.swift */; };
+		8B88501D20590CCB00BF811F /* BinanceEventAggTrade+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88501120590CCA00BF811F /* BinanceEventAggTrade+CoreDataClass.swift */; };
+		8B88501E20590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88501220590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +41,48 @@
 			remoteGlobalIDString = 8B6B2E5C2058862E00B13CAA;
 			remoteInfo = BinanceWSApi;
 		};
+		8B6B2E8520588ADC00B13CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33CCF0921F5DDC030099B092;
+			remoteInfo = Starscream;
+		};
+		8B6B2E8720588ADC00B13CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 335FA2021F5DF71D00F6D2EC;
+			remoteInfo = "Starscream Tests";
+		};
+		8B6B2EBB2058C65A00B13CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 444A78DC1D8819F8003983A2;
+			remoteInfo = "CommonCrypto-watchOS";
+		};
+		8B6B2EBD2058C65A00B13CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 444A78E91D881A1E003983A2;
+			remoteInfo = "CommonCrypto-iOS";
+		};
+		8B6B2EBF2058C65A00B13CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 444A78F61D881A2D003983A2;
+			remoteInfo = "CommonCrypto-tvOS";
+		};
+		8B6B2EC12058C65A00B13CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 444A79031D881A39003983A2;
+			remoteInfo = "CommonCrypto-macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +92,28 @@
 		8B6B2E662058862E00B13CAA /* BinanceWSApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinanceWSApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6B2E6B2058862E00B13CAA /* BinanceWSApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceWSApiTests.swift; sourceTree = "<group>"; };
 		8B6B2E6D2058862E00B13CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = ../Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
+		8B6B2E8A20588BB000B13CAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceWSApi.swift; sourceTree = "<group>"; };
+		8B6B2E8F20588BE600B13CAA /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		8B6B2EA620589C8300B13CAA /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		8B6B2EA82058A96D00B13CAA /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
+		8B6B2EAA2058ADD200B13CAA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B6B2EAC2058B46600B13CAA /* snippets */ = {isa = PBXFileReference; lastKnownFileType = text; path = snippets; sourceTree = "<group>"; };
+		8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CommonCrypto.xcodeproj; sourceTree = "<group>"; };
+		8B6B2EF92058FC2900B13CAA /* BinanceWSApi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BinanceWSApi.xcdatamodel; sourceTree = "<group>"; };
+		8B88500720590CC700BF811F /* BinanceEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B88500820590CC700BF811F /* Kline+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kline+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B88500920590CC700BF811F /* BinanceEventTickerAll+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTickerAll+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B88500A20590CC800BF811F /* Kline+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kline+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B88500B20590CC800BF811F /* BinanceEventKLine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventKLine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B88500C20590CC900BF811F /* BinanceEventAggTrade+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventAggTrade+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B88500D20590CC900BF811F /* BinanceEventTicker+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTicker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B88500E20590CC900BF811F /* BinanceEventTickerAll+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTickerAll+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B88500F20590CCA00BF811F /* BinanceEventTicker+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTicker+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B88501020590CCA00BF811F /* BinanceEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B88501120590CCA00BF811F /* BinanceEventAggTrade+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventAggTrade+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B88501220590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventKLine+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6B2E8C20588BB400B13CAA /* Starscream.framework in Frameworks */,
+				8B6B2E8B20588BB000B13CAA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +143,8 @@
 				8B6B2E5F2058862E00B13CAA /* BinanceWSApi */,
 				8B6B2E6A2058862E00B13CAA /* BinanceWSApiTests */,
 				8B6B2E5E2058862E00B13CAA /* Products */,
+				8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */,
+				8B6B2E8920588BAF00B13CAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +160,16 @@
 		8B6B2E5F2058862E00B13CAA /* BinanceWSApi */ = {
 			isa = PBXGroup;
 			children = (
+				8B884FE120590C8C00BF811F /* Managed Objects */,
 				8B6B2E602058862E00B13CAA /* BinanceWSApi.h */,
 				8B6B2E612058862E00B13CAA /* Info.plist */,
+				8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */,
+				8B6B2E8F20588BE600B13CAA /* Base.swift */,
+				8B6B2EA620589C8300B13CAA /* DataHandler.swift */,
+				8B6B2EA82058A96D00B13CAA /* DataTypes.swift */,
+				8B6B2EAA2058ADD200B13CAA /* Extensions.swift */,
+				8B6B2EAC2058B46600B13CAA /* snippets */,
+				8B6B2EF82058FC2900B13CAA /* BinanceWSApi.xcdatamodeld */,
 			);
 			path = BinanceWSApi;
 			sourceTree = "<group>";
@@ -84,6 +181,54 @@
 				8B6B2E6D2058862E00B13CAA /* Info.plist */,
 			);
 			path = BinanceWSApiTests;
+			sourceTree = "<group>";
+		};
+		8B6B2E8120588ADC00B13CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6B2E8620588ADC00B13CAA /* Starscream.framework */,
+				8B6B2E8820588ADC00B13CAA /* Starscream Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B6B2E8920588BAF00B13CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */,
+				8B6B2E8A20588BB000B13CAA /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B6B2EB12058C65A00B13CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6B2EBC2058C65A00B13CAA /* CommonCrypto.framework */,
+				8B6B2EBE2058C65A00B13CAA /* CommonCrypto.framework */,
+				8B6B2EC02058C65A00B13CAA /* CommonCrypto.framework */,
+				8B6B2EC22058C65A00B13CAA /* CommonCrypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B884FE120590C8C00BF811F /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				8B88500920590CC700BF811F /* BinanceEventTickerAll+CoreDataClass.swift */,
+				8B88500E20590CC900BF811F /* BinanceEventTickerAll+CoreDataProperties.swift */,
+				8B88501120590CCA00BF811F /* BinanceEventAggTrade+CoreDataClass.swift */,
+				8B88500C20590CC900BF811F /* BinanceEventAggTrade+CoreDataProperties.swift */,
+				8B88501220590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift */,
+				8B88500B20590CC800BF811F /* BinanceEventKLine+CoreDataProperties.swift */,
+				8B88500F20590CCA00BF811F /* BinanceEventTicker+CoreDataClass.swift */,
+				8B88500D20590CC900BF811F /* BinanceEventTicker+CoreDataProperties.swift */,
+				8B88501020590CCA00BF811F /* BinanceEvent+CoreDataClass.swift */,
+				8B88500720590CC700BF811F /* BinanceEvent+CoreDataProperties.swift */,
+				8B88500A20590CC800BF811F /* Kline+CoreDataClass.swift */,
+				8B88500820590CC700BF811F /* Kline+CoreDataProperties.swift */,
+			);
+			path = "Managed Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +293,7 @@
 				TargetAttributes = {
 					8B6B2E5C2058862E00B13CAA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					8B6B2E652058862E00B13CAA = {
@@ -166,6 +312,16 @@
 			mainGroup = 8B6B2E532058862D00B13CAA;
 			productRefGroup = 8B6B2E5E2058862E00B13CAA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B6B2EB12058C65A00B13CAA /* Products */;
+					ProjectRef = 8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B6B2E8120588ADC00B13CAA /* Products */;
+					ProjectRef = 8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8B6B2E5C2058862E00B13CAA /* BinanceWSApi */,
@@ -174,11 +330,57 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8B6B2E8620588ADC00B13CAA /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 8B6B2E8520588ADC00B13CAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6B2E8820588ADC00B13CAA /* Starscream Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Starscream Tests.xctest";
+			remoteRef = 8B6B2E8720588ADC00B13CAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6B2EBC2058C65A00B13CAA /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 8B6B2EBB2058C65A00B13CAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6B2EBE2058C65A00B13CAA /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 8B6B2EBD2058C65A00B13CAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6B2EC02058C65A00B13CAA /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 8B6B2EBF2058C65A00B13CAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6B2EC22058C65A00B13CAA /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 8B6B2EC12058C65A00B13CAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8B6B2E5B2058862E00B13CAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6B2EAD2058B46600B13CAA /* snippets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +398,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B88501320590CCB00BF811F /* BinanceEvent+CoreDataProperties.swift in Sources */,
+				8B88501720590CCB00BF811F /* BinanceEventKLine+CoreDataProperties.swift in Sources */,
+				8B88501C20590CCB00BF811F /* BinanceEvent+CoreDataClass.swift in Sources */,
+				8B88501E20590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift in Sources */,
+				8B88501520590CCB00BF811F /* BinanceEventTickerAll+CoreDataClass.swift in Sources */,
+				8B6B2EAB2058ADD200B13CAA /* Extensions.swift in Sources */,
+				8B6B2E9020588BE600B13CAA /* Base.swift in Sources */,
+				8B88501A20590CCB00BF811F /* BinanceEventTickerAll+CoreDataProperties.swift in Sources */,
+				8B6B2EA92058A96D00B13CAA /* DataTypes.swift in Sources */,
+				8B88501920590CCB00BF811F /* BinanceEventTicker+CoreDataProperties.swift in Sources */,
+				8B88501B20590CCB00BF811F /* BinanceEventTicker+CoreDataClass.swift in Sources */,
+				8B88501620590CCB00BF811F /* Kline+CoreDataClass.swift in Sources */,
+				8B6B2EFA2058FC2900B13CAA /* BinanceWSApi.xcdatamodeld in Sources */,
+				8B88501820590CCB00BF811F /* BinanceEventAggTrade+CoreDataProperties.swift in Sources */,
+				8B88501D20590CCB00BF811F /* BinanceEventAggTrade+CoreDataClass.swift in Sources */,
+				8B6B2EA720589C8300B13CAA /* DataHandler.swift in Sources */,
+				8B6B2E8E20588BD600B13CAA /* BinanceWSApi.swift in Sources */,
+				8B88501420590CCB00BF811F /* Kline+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +553,7 @@
 		8B6B2E722058862E00B13CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -348,6 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.cbret.BinanceWSApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -355,6 +577,7 @@
 		8B6B2E732058862E00B13CAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -377,6 +600,7 @@
 		8B6B2E752058862E00B13CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MHA75LWVGT;
@@ -391,6 +615,7 @@
 		8B6B2E762058862E00B13CAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MHA75LWVGT;
@@ -433,6 +658,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B6B2EF82058FC2900B13CAA /* BinanceWSApi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B6B2EF92058FC2900B13CAA /* BinanceWSApi.xcdatamodel */,
+			);
+			currentVersion = 8B6B2EF92058FC2900B13CAA /* BinanceWSApi.xcdatamodel */;
+			path = BinanceWSApi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B6B2E542058862D00B13CAA /* Project object */;
 }
