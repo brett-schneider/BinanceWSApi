@@ -7,30 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0B6B3E205AA52900656845 /* ManagedCodableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B6B3D205AA52900656845 /* ManagedCodableContext.swift */; };
+		8B2FEC6220647DEE00AA70D9 /* ManagedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B6B33205A265F00656845 /* ManagedObjects.swift */; };
 		8B6B2E672058862E00B13CAA /* BinanceWSApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E5D2058862E00B13CAA /* BinanceWSApi.framework */; };
 		8B6B2E6C2058862E00B13CAA /* BinanceWSApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E6B2058862E00B13CAA /* BinanceWSApiTests.swift */; };
 		8B6B2E6E2058862E00B13CAA /* BinanceWSApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6B2E602058862E00B13CAA /* BinanceWSApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B6B2E8B20588BB000B13CAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8A20588BB000B13CAA /* CoreData.framework */; };
 		8B6B2E8C20588BB400B13CAA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8620588ADC00B13CAA /* Starscream.framework */; };
 		8B6B2E8E20588BD600B13CAA /* BinanceWSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */; };
-		8B6B2E9020588BE600B13CAA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E8F20588BE600B13CAA /* Base.swift */; };
-		8B6B2EA720589C8300B13CAA /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EA620589C8300B13CAA /* DataHandler.swift */; };
 		8B6B2EA92058A96D00B13CAA /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EA82058A96D00B13CAA /* DataTypes.swift */; };
 		8B6B2EAB2058ADD200B13CAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EAA2058ADD200B13CAA /* Extensions.swift */; };
 		8B6B2EAD2058B46600B13CAA /* snippets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6B2EAC2058B46600B13CAA /* snippets */; };
 		8B6B2EFA2058FC2900B13CAA /* BinanceWSApi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EF82058FC2900B13CAA /* BinanceWSApi.xcdatamodeld */; };
-		8B88501320590CCB00BF811F /* BinanceEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500720590CC700BF811F /* BinanceEvent+CoreDataProperties.swift */; };
-		8B88501420590CCB00BF811F /* Kline+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500820590CC700BF811F /* Kline+CoreDataProperties.swift */; };
-		8B88501520590CCB00BF811F /* BinanceEventTickerAll+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500920590CC700BF811F /* BinanceEventTickerAll+CoreDataClass.swift */; };
-		8B88501620590CCB00BF811F /* Kline+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500A20590CC800BF811F /* Kline+CoreDataClass.swift */; };
-		8B88501720590CCB00BF811F /* BinanceEventKLine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500B20590CC800BF811F /* BinanceEventKLine+CoreDataProperties.swift */; };
-		8B88501820590CCB00BF811F /* BinanceEventAggTrade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500C20590CC900BF811F /* BinanceEventAggTrade+CoreDataProperties.swift */; };
-		8B88501920590CCB00BF811F /* BinanceEventTicker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500D20590CC900BF811F /* BinanceEventTicker+CoreDataProperties.swift */; };
-		8B88501A20590CCB00BF811F /* BinanceEventTickerAll+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500E20590CC900BF811F /* BinanceEventTickerAll+CoreDataProperties.swift */; };
-		8B88501B20590CCB00BF811F /* BinanceEventTicker+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88500F20590CCA00BF811F /* BinanceEventTicker+CoreDataClass.swift */; };
-		8B88501C20590CCB00BF811F /* BinanceEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88501020590CCA00BF811F /* BinanceEvent+CoreDataClass.swift */; };
-		8B88501D20590CCB00BF811F /* BinanceEventAggTrade+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88501120590CCA00BF811F /* BinanceEventAggTrade+CoreDataClass.swift */; };
-		8B88501E20590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88501220590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B0B6B33205A265F00656845 /* ManagedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjects.swift; sourceTree = "<group>"; };
+		8B0B6B3D205AA52900656845 /* ManagedCodableContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCodableContext.swift; sourceTree = "<group>"; };
 		8B6B2E5D2058862E00B13CAA /* BinanceWSApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinanceWSApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6B2E602058862E00B13CAA /* BinanceWSApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinanceWSApi.h; sourceTree = "<group>"; };
 		8B6B2E612058862E00B13CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,25 +85,11 @@
 		8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = ../Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
 		8B6B2E8A20588BB000B13CAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceWSApi.swift; sourceTree = "<group>"; };
-		8B6B2E8F20588BE600B13CAA /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
-		8B6B2EA620589C8300B13CAA /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		8B6B2EA82058A96D00B13CAA /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
 		8B6B2EAA2058ADD200B13CAA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8B6B2EAC2058B46600B13CAA /* snippets */ = {isa = PBXFileReference; lastKnownFileType = text; path = snippets; sourceTree = "<group>"; };
 		8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CommonCrypto.xcodeproj; sourceTree = "<group>"; };
 		8B6B2EF92058FC2900B13CAA /* BinanceWSApi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BinanceWSApi.xcdatamodel; sourceTree = "<group>"; };
-		8B88500720590CC700BF811F /* BinanceEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B88500820590CC700BF811F /* Kline+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kline+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B88500920590CC700BF811F /* BinanceEventTickerAll+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTickerAll+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8B88500A20590CC800BF811F /* Kline+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kline+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8B88500B20590CC800BF811F /* BinanceEventKLine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventKLine+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B88500C20590CC900BF811F /* BinanceEventAggTrade+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventAggTrade+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B88500D20590CC900BF811F /* BinanceEventTicker+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTicker+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B88500E20590CC900BF811F /* BinanceEventTickerAll+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTickerAll+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B88500F20590CCA00BF811F /* BinanceEventTicker+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventTicker+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8B88501020590CCA00BF811F /* BinanceEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8B88501120590CCA00BF811F /* BinanceEventAggTrade+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventAggTrade+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8B88501220590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceEventKLine+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,12 +136,11 @@
 		8B6B2E5F2058862E00B13CAA /* BinanceWSApi */ = {
 			isa = PBXGroup;
 			children = (
-				8B884FE120590C8C00BF811F /* Managed Objects */,
+				8B0B6B33205A265F00656845 /* ManagedObjects.swift */,
 				8B6B2E602058862E00B13CAA /* BinanceWSApi.h */,
-				8B6B2E612058862E00B13CAA /* Info.plist */,
 				8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */,
-				8B6B2E8F20588BE600B13CAA /* Base.swift */,
-				8B6B2EA620589C8300B13CAA /* DataHandler.swift */,
+				8B6B2E612058862E00B13CAA /* Info.plist */,
+				8B0B6B3D205AA52900656845 /* ManagedCodableContext.swift */,
 				8B6B2EA82058A96D00B13CAA /* DataTypes.swift */,
 				8B6B2EAA2058ADD200B13CAA /* Extensions.swift */,
 				8B6B2EAC2058B46600B13CAA /* snippets */,
@@ -210,25 +185,6 @@
 				8B6B2EC22058C65A00B13CAA /* CommonCrypto.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8B884FE120590C8C00BF811F /* Managed Objects */ = {
-			isa = PBXGroup;
-			children = (
-				8B88500920590CC700BF811F /* BinanceEventTickerAll+CoreDataClass.swift */,
-				8B88500E20590CC900BF811F /* BinanceEventTickerAll+CoreDataProperties.swift */,
-				8B88501120590CCA00BF811F /* BinanceEventAggTrade+CoreDataClass.swift */,
-				8B88500C20590CC900BF811F /* BinanceEventAggTrade+CoreDataProperties.swift */,
-				8B88501220590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift */,
-				8B88500B20590CC800BF811F /* BinanceEventKLine+CoreDataProperties.swift */,
-				8B88500F20590CCA00BF811F /* BinanceEventTicker+CoreDataClass.swift */,
-				8B88500D20590CC900BF811F /* BinanceEventTicker+CoreDataProperties.swift */,
-				8B88501020590CCA00BF811F /* BinanceEvent+CoreDataClass.swift */,
-				8B88500720590CC700BF811F /* BinanceEvent+CoreDataProperties.swift */,
-				8B88500A20590CC800BF811F /* Kline+CoreDataClass.swift */,
-				8B88500820590CC700BF811F /* Kline+CoreDataProperties.swift */,
-			);
-			path = "Managed Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,24 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B88501320590CCB00BF811F /* BinanceEvent+CoreDataProperties.swift in Sources */,
-				8B88501720590CCB00BF811F /* BinanceEventKLine+CoreDataProperties.swift in Sources */,
-				8B88501C20590CCB00BF811F /* BinanceEvent+CoreDataClass.swift in Sources */,
-				8B88501E20590CCB00BF811F /* BinanceEventKLine+CoreDataClass.swift in Sources */,
-				8B88501520590CCB00BF811F /* BinanceEventTickerAll+CoreDataClass.swift in Sources */,
 				8B6B2EAB2058ADD200B13CAA /* Extensions.swift in Sources */,
-				8B6B2E9020588BE600B13CAA /* Base.swift in Sources */,
-				8B88501A20590CCB00BF811F /* BinanceEventTickerAll+CoreDataProperties.swift in Sources */,
-				8B6B2EA92058A96D00B13CAA /* DataTypes.swift in Sources */,
-				8B88501920590CCB00BF811F /* BinanceEventTicker+CoreDataProperties.swift in Sources */,
-				8B88501B20590CCB00BF811F /* BinanceEventTicker+CoreDataClass.swift in Sources */,
-				8B88501620590CCB00BF811F /* Kline+CoreDataClass.swift in Sources */,
-				8B6B2EFA2058FC2900B13CAA /* BinanceWSApi.xcdatamodeld in Sources */,
-				8B88501820590CCB00BF811F /* BinanceEventAggTrade+CoreDataProperties.swift in Sources */,
-				8B88501D20590CCB00BF811F /* BinanceEventAggTrade+CoreDataClass.swift in Sources */,
-				8B6B2EA720589C8300B13CAA /* DataHandler.swift in Sources */,
+				8B0B6B3E205AA52900656845 /* ManagedCodableContext.swift in Sources */,
 				8B6B2E8E20588BD600B13CAA /* BinanceWSApi.swift in Sources */,
-				8B88501420590CCB00BF811F /* Kline+CoreDataProperties.swift in Sources */,
+				8B6B2EA92058A96D00B13CAA /* DataTypes.swift in Sources */,
+				8B2FEC6220647DEE00AA70D9 /* ManagedObjects.swift in Sources */,
+				8B6B2EFA2058FC2900B13CAA /* BinanceWSApi.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

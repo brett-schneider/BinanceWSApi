@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
+@objc(BinanceEventKLine)
 public class BinanceEventKLine: BinanceEvent {
 
 }

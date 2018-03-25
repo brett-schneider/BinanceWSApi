@@ -9,7 +9,7 @@
 
 import Foundation
 import CoreData
-import DMDataTypes
+
 
 extension BinanceEventTickerAll {
 

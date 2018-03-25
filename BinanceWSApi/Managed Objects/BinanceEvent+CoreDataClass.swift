@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
+@objc(BinanceEvent)
 public class BinanceEvent: NSManagedObject {
 
 }

@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
+@objc(Kline)
 public class Kline: NSManagedObject {
 
 }

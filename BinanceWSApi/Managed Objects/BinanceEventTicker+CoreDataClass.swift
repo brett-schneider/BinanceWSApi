@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
+@objc(BinanceEventTicker)
 public class BinanceEventTicker: BinanceEvent {
 
 }

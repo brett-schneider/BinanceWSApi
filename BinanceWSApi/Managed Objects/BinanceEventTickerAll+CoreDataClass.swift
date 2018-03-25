@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
-open class BinanceEventTickerAll: NSManagedObject {
+@objc(BinanceEventTickerAll)
+public class BinanceEventTickerAll: NSManagedObject {
 
 }
