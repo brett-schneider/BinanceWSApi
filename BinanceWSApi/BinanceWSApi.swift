@@ -38,9 +38,13 @@ public class BinanceWSApi {
 
 extension BinanceWSApi: WebSocketDelegate {
     public func process(data: Data) {
+//        let dbgstr = String(data: data, encoding: String.Encoding.utf8)
+//        if (dbgstr?.range(of:"lastUpdateId") != nil) {
+//            Swift.print("data containig lastUpdateId \(String(describing: dbgstr))")
+//        }
         if let event = try? decoder.decode(BinanceRepsonse.self, from: data) {
-            Swift.print("response \(event)")
-            switch event.event {
+            // Swift.print("response \(event)")
+            switch event.event ?? BinanceEventType.empty {
             case BinanceEventType.aggTrade:
                 _ = try? decoder.decode(BinanceEventAggTrade.self, from: data)
                 // print ("decoded something like: \(String(describing: f))")
@@ -51,16 +55,21 @@ extension BinanceWSApi: WebSocketDelegate {
             case BinanceEventType.ticker:
                 _ = try? decoder.decode(BinanceEventTicker.self, from: data)
             // case allTicker = "allTicker" // stream name !ticker@arr ∀ symbols, actually same payload as 24hrTicker, except in an array
-            case BinanceEventType.depthUpdate:
-                _ = try? decoder.decode(BinanceEventAggTrade.self, from: data)
 //            case let unknownvalue:
 //                print ("unknown BinaceEventType: \(unknownvalue ?? "n/a")")
+            case BinanceEventType.depthUpdate:
+                _ = try? decoder.decode(BinanceEventDepthUpdate.self, from: data)
+            case BinanceEventType.empty:
+                Swift.print("BinanceEventType.empty")
+                if (event.lastUpdateId != nil) {
+                    _ = try? decoder.decode(BinanceEventDepthPart.self, from: data)
+                }
             }
         } else {
             Swift.print("failed to decode response. array?")
             if let event = try? decoder.decode([BinanceRepsonse].self, from: data) {
                 if (event.count > 0) {
-                    switch event[0].event {
+                    switch event[0].event! {
                     case BinanceEventType.ticker:
                         _ = try? decoder.decode(BinanceEventTickerAll.self, from: data)
                     default:

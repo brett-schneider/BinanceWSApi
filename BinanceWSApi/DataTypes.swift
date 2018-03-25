@@ -22,13 +22,19 @@ import Foundation
 
 // for decoding the response without creating a managed object
 struct BinanceRepsonse: Codable {
-    let event: BinanceEventType
+    let event: BinanceEventType?
+    let lastUpdateId: Int64?
     
     enum CodingKeys: String, CodingKey {
         case event = "e"
+        case lastUpdateId
     }
 }
 
+struct DepthUpdate: Codable {
+    let price: Double
+    let quantity: Double
+}
 // typealias BinanceEventTickerAll = [BinanceEventTicker]
 
 // Binance enums
@@ -58,6 +64,7 @@ public enum BinanceEventType: String, Codable {
                                     // ∀ symbols, actually same payload as 24hrTicker,
                                     // however, thewy're all in an anoymous root array. ugh.
     case depthUpdate = "depthUpdate" // stream name <symbol>@depth
+    case empty = ""
 }
 public enum BinanceDepthLevels: String, Codable {
     case d5 = "5"

@@ -14,7 +14,7 @@ protocol DecoderUpdatable {
 
 public protocol ManagedCodableProtocol: Decodable { }
 
-public extension ManagedCodableProtocol where Self: NSManagedObject {    
+public extension ManagedCodableProtocol where Self: NSManagedObject {
     func loadData<Key>(from decoder: Decoder, keyType: Key.Type) throws where Key: CodingKey {
         let container = try decoder.container(keyedBy: Key.self)
         let attributes = self.entity.attributesByName
@@ -77,8 +77,14 @@ public extension ManagedCodableProtocol where Self: NSManagedObject {
                 let value = try container.decodeIfPresent(Date.self, forKey: nameKey)
                 self.setValue(value, forKey: name)
                 // Swift.print("dateAttributeType :: value \(String(describing: value)) :: name \(name)")
+            case .transformableAttributeType:
+                // Swift.print("Transformable: \(nameKey)")
+                let value: [[Double]] = container.decodeDepth(forKey: nameKey)
+                // Swift.print("result: \(String(describing: value))")
+                self.setValue(value, forKey: name)
             default:
-                print("Undefined NameKey : \(nameKey)")
+                Swift.print("Undefined NameKey: \(nameKey)")
+                Swift.print("attr \(attr) :: attrType \(String(describing: attrType)) :: name \(name)")
                 break
             }
         }

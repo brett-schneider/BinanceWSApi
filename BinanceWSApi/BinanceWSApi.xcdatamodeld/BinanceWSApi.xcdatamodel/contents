@@ -11,6 +11,20 @@
         <attribute name="symbol" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tradeTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
+    <entity name="BinanceEventDepthPart" representedClassName="BinanceEventDepthPart" syncable="YES">
+        <attribute name="lastUpdateID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updateAsks" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="updateBids" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="BinanceEventDepthUpdate" representedClassName="BinanceEventDepthUpdate" syncable="YES">
+        <attribute name="e" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="finalUpdateID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="firstUpdateID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateAsks" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="updateBids" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
     <entity name="BinanceEventKLine" representedClassName="BinanceEventKLine" syncable="YES">
         <attribute name="e" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -80,5 +94,7 @@
         <element name="BinanceEventTicker" positionX="-162" positionY="-0" width="128" height="390"/>
         <element name="BinanceEventTrade" positionX="-342" positionY="-234" width="128" height="195"/>
         <element name="BinanceKline" positionX="34" positionY="27" width="128" height="300"/>
+        <element name="BinanceEventDepthUpdate" positionX="-162" positionY="-81" width="128" height="150"/>
+        <element name="BinanceEventDepthPart" positionX="-144" positionY="-63" width="128" height="90"/>
     </elements>
 </model>

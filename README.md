@@ -3,9 +3,10 @@ Xcode/macos Binance Api Client for websocket using CoreData and Starscream
 
 no unit tests so far, i've tested a few combinations of endpoint. 
 
-depths not supported so far.
+~~depths not supported so far.~~
+depths implemented. be aware that the partial book depth stream does not conform to the other events. for starters it does not have a symbol, which when stored in a database might lead to confusion. so if you use this to keep your order book updated, maybe flush the table before
 
-does not (really) detect if the same data has already been loaded.
+does not (really) detect if the same data has already been loaded. not sure how to set the constraints. sometimes we have ids, sometimes we have ranges of ids with an interval size.
 
 ### installation
 

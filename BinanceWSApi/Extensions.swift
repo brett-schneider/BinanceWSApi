@@ -29,23 +29,52 @@ extension KeyedDecodingContainer {
         // Swift.print("decoding date... \(key)")
         return Date(timeIntervalSince1970: floor(Double(try self.decode(UInt64.self, forKey: key))/1000.0))
     }
-    func decodeIfPresent(_ type: Date.Type, forKey key: Key) throws -> Date {
+    func decodeIfPresent(_ type: Date.Type, forKey key: Key) throws -> Date? {
         // Swift.print("decoding date (if present)... \(key)")
         return Date(timeIntervalSince1970: floor(Double(try self.decode(UInt64.self, forKey: key))/1000.0))
     }
-    func decodespecial(_ type: Double.Type, forKey key: Key) throws -> Double {
+    func decodespecial(_ type: Double.Type, forKey key: Key) throws -> Double? {
         // Swift.print("decoding double (if present)... \(key)")
         return Double(try self.decode(String.self, forKey: key))!
     }
-    func decodeIfPreset(_ type: BinanceKline.Type, forKey key: Key) throws -> BinanceKline? {
-        // Swift.print("decode kline (if present)... \(key)")
-        return nil
+    func decodeDepth(forKey key: Key) -> [[Double]] {
+        var ret: [[Double]] = []
+        do {
+            var a = try self.nestedUnkeyedContainer(forKey: key)
+            while (!a.isAtEnd) {
+                do {
+                    var b = try a.nestedUnkeyedContainer()
+                    var c: [Double] = []
+                    while (!b.isAtEnd) {
+                        do {
+                            if (b.currentIndex < 2) {
+                                // for whatever reason after the price and quantity there is an empty nested array.
+                                let d = try b.decodespecial(Double.self)
+                                // Swift.print("Decoded d \(String(describing: d))")
+                                if (d != nil) { c.append(d!) }
+                            } else {
+                                _ = try b.nestedUnkeyedContainer()
+                            }
+                        } catch {
+                            Swift.print("unable to decodespecial double")
+                        }
+                    }
+                    ret.append(c)
+                } catch {
+                    Swift.print("unable to access inner nestedunkeyedcontainer of \(key)")
+                }
+            }
+        } catch {
+            Swift.print("unable to access nestedunkeyedcontainer \(key)")
+        }
+        return ret
     }
-    //    Leads to ambiguity :-(
-//    func decodeIfPresent(_ type: Bool.Type, forKey key: Key) throws -> Bool {
-//        Swift.print("decoding bool (if present)... \(key)")
-//        return try self.decode(Int.self, forKey: key) == 0 ? false : true
-//    }
+}
+extension UnkeyedDecodingContainer {
+    mutating func decodespecial(_ type: Double.Type) throws -> Double? {
+        // Swift.print("decoding double (if present)... \(key)")
+        return Double(try self.decode(String.self))!
+    }
 }
 extension Double {
     func trunc(places : Int)-> Double {

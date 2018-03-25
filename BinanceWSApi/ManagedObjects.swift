@@ -349,3 +349,81 @@ public extension BinanceEventTrade {
     }
 
 }
+
+@objc(BinanceEventDepthPart)
+open class BinanceEventDepthPart: BinanceEvent {
+    public override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertInto: context)
+    }
+    public required convenience init(from decoder: Decoder) throws {
+        // Create NSEntityDescription with NSManagedObjectContext
+        let whoami = String(describing: type(of: self))
+        Swift.print("creating nsmanagedobject \(whoami)")
+        guard let managedObjectContext = decoder.userInfo[.context] as? NSManagedObjectContext,
+            let entity = NSEntityDescription.entity(forEntityName: whoami, in: managedObjectContext) else {
+                fatalError("Failed to decode BinanceEvent \(whoami)!")
+        }
+        self.init(entity: entity, insertInto: managedObjectContext)
+        try self.loadData(from: decoder, keyType: CodingKeys.self)
+    }
+    
+}
+public extension BinanceEventDepthPart {
+    // this interface is different to the others. biggest bugger: no f'ing symbol, so you cannot combine this one with other streams of the same kind
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<BinanceEventDepthPart> {
+        return NSFetchRequest<BinanceEventDepthPart>(entityName: "BinanceEventDepthPart")
+    }
+    
+    @NSManaged public var lastUpdateID: Int64
+    @NSManaged public var updateAsks: [[Double:Double]]?
+    @NSManaged public var updateBids: [[Double:Double]]?
+    public enum CodingKeys: String, CodingKey {
+        case lastUpdateID = "lastUpdateId"
+        case updateBids = "bids"
+        case updateAsks = "asks"
+    }
+}
+
+@objc(BinanceEventDepthUpdate)
+open class BinanceEventDepthUpdate: BinanceEvent {
+    public override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertInto: context)
+    }
+    public required convenience init(from decoder: Decoder) throws {
+        // Create NSEntityDescription with NSManagedObjectContext
+        let whoami = String(describing: type(of: self))
+        Swift.print("creating nsmanagedobject \(whoami)")
+        guard let managedObjectContext = decoder.userInfo[.context] as? NSManagedObjectContext,
+            let entity = NSEntityDescription.entity(forEntityName: whoami, in: managedObjectContext) else {
+                fatalError("Failed to decode BinanceEvent \(whoami)!")
+        }
+        self.init(entity: entity, insertInto: managedObjectContext)
+        try self.loadData(from: decoder, keyType: CodingKeys.self)
+    }
+    
+}
+public extension BinanceEventDepthUpdate {
+    // this interface is different to the others. biggest bugger: no f'ing symbol, so you cannot combine this one with other streams of the same kind
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<BinanceEventDepthUpdate> {
+        return NSFetchRequest<BinanceEventDepthUpdate>(entityName: "BinanceEventDepthUpdate")
+    }
+    
+    @NSManaged public var e: String
+    @NSManaged public var eventTime: Int64
+    @NSManaged public var symbol: Int64
+    @NSManaged public var firstUpdateID: Int64
+    @NSManaged public var finalUpdateID: Int64
+    @NSManaged public var updateAsks: [[Double]]?
+    @NSManaged public var updateBids: [[Double]]?
+    public enum CodingKeys: String, CodingKey {
+        case e
+        case eventTime = "E"
+        case symbol = "s"
+        case firstUpdateID = "U"
+        case finalUpdateID = "u"
+        case updateBids = "b"
+        case updateAsks = "a"
+    }
+}
+
+
