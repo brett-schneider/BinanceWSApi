@@ -17,8 +17,19 @@
 		8B6B2E8E20588BD600B13CAA /* BinanceWSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2E8D20588BD600B13CAA /* BinanceWSApi.swift */; };
 		8B6B2EA92058A96D00B13CAA /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EA82058A96D00B13CAA /* DataTypes.swift */; };
 		8B6B2EAB2058ADD200B13CAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EAA2058ADD200B13CAA /* Extensions.swift */; };
-		8B6B2EAD2058B46600B13CAA /* snippets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6B2EAC2058B46600B13CAA /* snippets */; };
 		8B6B2EFA2058FC2900B13CAA /* BinanceWSApi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2EF82058FC2900B13CAA /* BinanceWSApi.xcdatamodeld */; };
+		8BD8EDDF207328D800316679 /* BinanceWSApi_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD8EDDD207328D800316679 /* BinanceWSApi_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD8EDE52073292E00316679 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8620588ADC00B13CAA /* Starscream.framework */; };
+		8BD8EDE72073293700316679 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD8EDE62073293700316679 /* CoreData.framework */; };
+		8BD8EDF320732ABA00316679 /* BinanceWSApi_watchos.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD8EDF120732ABA00316679 /* BinanceWSApi_watchos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD8EDF720732ACA00316679 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8620588ADC00B13CAA /* Starscream.framework */; };
+		8BD8EDF920732AD100316679 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD8EDF820732AD100316679 /* CoreData.framework */; };
+		8BD8EE0320732AEC00316679 /* BinanceWSApi_tvos.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD8EE0120732AEC00316679 /* BinanceWSApi_tvos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD8EE0720732AF600316679 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8620588ADC00B13CAA /* Starscream.framework */; };
+		8BD8EE0920732B0000316679 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD8EE0820732B0000316679 /* CoreData.framework */; };
+		8BD8EE1320732B1800316679 /* BinanceWSApi_macos.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD8EE1120732B1800316679 /* BinanceWSApi_macos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD8EE1720732B2200316679 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8620588ADC00B13CAA /* Starscream.framework */; };
+		8BD8EE1820732B2800316679 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B2E8A20588BB000B13CAA /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +101,23 @@
 		8B6B2EAC2058B46600B13CAA /* snippets */ = {isa = PBXFileReference; lastKnownFileType = text; path = snippets; sourceTree = "<group>"; };
 		8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CommonCrypto.xcodeproj; sourceTree = "<group>"; };
 		8B6B2EF92058FC2900B13CAA /* BinanceWSApi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BinanceWSApi.xcdatamodel; sourceTree = "<group>"; };
+		8BD8EDD32072DDBD00316679 /* BinanceWSApi copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BinanceWSApi copy-Info.plist"; path = "/Users/brett/Documents/xcode/switchbert/BinanceWSApi/BinanceWSApi copy-Info.plist"; sourceTree = "<absolute>"; };
+		8BD8EDDB207328D800316679 /* BinanceWSApi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinanceWSApi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD8EDDD207328D800316679 /* BinanceWSApi_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinanceWSApi_ios.h; sourceTree = "<group>"; };
+		8BD8EDDE207328D800316679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD8EDE62073293700316679 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		8BD8EDE820732A2C00316679 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BD8EDEF20732AB900316679 /* BinanceWSApi_watchos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinanceWSApi_watchos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD8EDF120732ABA00316679 /* BinanceWSApi_watchos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinanceWSApi_watchos.h; sourceTree = "<group>"; };
+		8BD8EDF220732ABA00316679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD8EDF820732AD100316679 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		8BD8EDFF20732AEB00316679 /* BinanceWSApi_tvos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinanceWSApi_tvos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD8EE0120732AEC00316679 /* BinanceWSApi_tvos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinanceWSApi_tvos.h; sourceTree = "<group>"; };
+		8BD8EE0220732AEC00316679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD8EE0820732B0000316679 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		8BD8EE0F20732B1800316679 /* BinanceWSApi_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinanceWSApi_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD8EE1120732B1800316679 /* BinanceWSApi_macos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinanceWSApi_macos.h; sourceTree = "<group>"; };
+		8BD8EE1220732B1800316679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +138,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BD8EDD7207328D800316679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EDE72073293700316679 /* CoreData.framework in Frameworks */,
+				8BD8EDE52073292E00316679 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDEB20732AB900316679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EDF920732AD100316679 /* CoreData.framework in Frameworks */,
+				8BD8EDF720732ACA00316679 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDFB20732AEB00316679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EE0920732B0000316679 /* CoreData.framework in Frameworks */,
+				8BD8EE0720732AF600316679 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EE0B20732B1800316679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EE1820732B2800316679 /* CoreData.framework in Frameworks */,
+				8BD8EE1720732B2200316679 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,9 +182,14 @@
 			children = (
 				8B6B2E5F2058862E00B13CAA /* BinanceWSApi */,
 				8B6B2E6A2058862E00B13CAA /* BinanceWSApiTests */,
+				8BD8EDDC207328D800316679 /* BinanceWSApi.ios */,
+				8BD8EDF020732ABA00316679 /* BinanceWSApi.watchos */,
+				8BD8EE0020732AEC00316679 /* BinanceWSApi.tvos */,
+				8BD8EE1020732B1800316679 /* BinanceWSApi.macos */,
 				8B6B2E5E2058862E00B13CAA /* Products */,
 				8B6B2E8020588ADC00B13CAA /* Starscream.xcodeproj */,
 				8B6B2E8920588BAF00B13CAA /* Frameworks */,
+				8BD8EDD32072DDBD00316679 /* BinanceWSApi copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +198,10 @@
 			children = (
 				8B6B2E5D2058862E00B13CAA /* BinanceWSApi.framework */,
 				8B6B2E662058862E00B13CAA /* BinanceWSApiTests.xctest */,
+				8BD8EDDB207328D800316679 /* BinanceWSApi_ios.framework */,
+				8BD8EDEF20732AB900316679 /* BinanceWSApi_watchos.framework */,
+				8BD8EDFF20732AEB00316679 /* BinanceWSApi_tvos.framework */,
+				8BD8EE0F20732B1800316679 /* BinanceWSApi_macos.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +243,10 @@
 		8B6B2E8920588BAF00B13CAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BD8EDF820732AD100316679 /* CoreData.framework */,
+				8BD8EE0820732B0000316679 /* CoreData.framework */,
+				8BD8EDE820732A2C00316679 /* Foundation.framework */,
+				8BD8EDE62073293700316679 /* CoreData.framework */,
 				8B6B2EB02058C65A00B13CAA /* CommonCrypto.xcodeproj */,
 				8B6B2E8A20588BB000B13CAA /* CoreData.framework */,
 			);
@@ -187,6 +264,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8BD8EDDC207328D800316679 /* BinanceWSApi.ios */ = {
+			isa = PBXGroup;
+			children = (
+				8BD8EDDD207328D800316679 /* BinanceWSApi_ios.h */,
+				8BD8EDDE207328D800316679 /* Info.plist */,
+			);
+			path = BinanceWSApi.ios;
+			sourceTree = "<group>";
+		};
+		8BD8EDF020732ABA00316679 /* BinanceWSApi.watchos */ = {
+			isa = PBXGroup;
+			children = (
+				8BD8EDF120732ABA00316679 /* BinanceWSApi_watchos.h */,
+				8BD8EDF220732ABA00316679 /* Info.plist */,
+			);
+			path = BinanceWSApi.watchos;
+			sourceTree = "<group>";
+		};
+		8BD8EE0020732AEC00316679 /* BinanceWSApi.tvos */ = {
+			isa = PBXGroup;
+			children = (
+				8BD8EE0120732AEC00316679 /* BinanceWSApi_tvos.h */,
+				8BD8EE0220732AEC00316679 /* Info.plist */,
+			);
+			path = BinanceWSApi.tvos;
+			sourceTree = "<group>";
+		};
+		8BD8EE1020732B1800316679 /* BinanceWSApi.macos */ = {
+			isa = PBXGroup;
+			children = (
+				8BD8EE1120732B1800316679 /* BinanceWSApi_macos.h */,
+				8BD8EE1220732B1800316679 /* Info.plist */,
+			);
+			path = BinanceWSApi.macos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -195,6 +308,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6B2E6E2058862E00B13CAA /* BinanceWSApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDD8207328D800316679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EDDF207328D800316679 /* BinanceWSApi_ios.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDEC20732AB900316679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EDF320732ABA00316679 /* BinanceWSApi_watchos.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDFC20732AEB00316679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EE0320732AEC00316679 /* BinanceWSApi_tvos.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EE0C20732B1800316679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8EE1320732B1800316679 /* BinanceWSApi_macos.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +382,78 @@
 			productReference = 8B6B2E662058862E00B13CAA /* BinanceWSApiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8BD8EDDA207328D800316679 /* BinanceWSApi.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD8EDE4207328D800316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.ios" */;
+			buildPhases = (
+				8BD8EDD6207328D800316679 /* Sources */,
+				8BD8EDD7207328D800316679 /* Frameworks */,
+				8BD8EDD8207328D800316679 /* Headers */,
+				8BD8EDD9207328D800316679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinanceWSApi.ios;
+			productName = BinanceWSApi.ios;
+			productReference = 8BD8EDDB207328D800316679 /* BinanceWSApi_ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BD8EDEE20732AB900316679 /* BinanceWSApi.watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD8EDF420732ABA00316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.watchos" */;
+			buildPhases = (
+				8BD8EDEA20732AB900316679 /* Sources */,
+				8BD8EDEB20732AB900316679 /* Frameworks */,
+				8BD8EDEC20732AB900316679 /* Headers */,
+				8BD8EDED20732AB900316679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinanceWSApi.watchos;
+			productName = BinanceWSApi.watchos;
+			productReference = 8BD8EDEF20732AB900316679 /* BinanceWSApi_watchos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BD8EDFE20732AEB00316679 /* BinanceWSApi.tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD8EE0420732AEC00316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.tvos" */;
+			buildPhases = (
+				8BD8EDFA20732AEB00316679 /* Sources */,
+				8BD8EDFB20732AEB00316679 /* Frameworks */,
+				8BD8EDFC20732AEB00316679 /* Headers */,
+				8BD8EDFD20732AEB00316679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinanceWSApi.tvos;
+			productName = BinanceWSApi.tvos;
+			productReference = 8BD8EDFF20732AEB00316679 /* BinanceWSApi_tvos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BD8EE0E20732B1800316679 /* BinanceWSApi.macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD8EE1420732B1800316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.macos" */;
+			buildPhases = (
+				8BD8EE0A20732B1800316679 /* Sources */,
+				8BD8EE0B20732B1800316679 /* Frameworks */,
+				8BD8EE0C20732B1800316679 /* Headers */,
+				8BD8EE0D20732B1800316679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinanceWSApi.macos;
+			productName = BinanceWSApi.macos;
+			productReference = 8BD8EE0F20732B1800316679 /* BinanceWSApi_macos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -253,6 +470,22 @@
 						ProvisioningStyle = Automatic;
 					};
 					8B6B2E652058862E00B13CAA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8BD8EDDA207328D800316679 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8BD8EDEE20732AB900316679 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8BD8EDFE20732AEB00316679 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8BD8EE0E20732B1800316679 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -282,6 +515,10 @@
 			targets = (
 				8B6B2E5C2058862E00B13CAA /* BinanceWSApi */,
 				8B6B2E652058862E00B13CAA /* BinanceWSApiTests */,
+				8BD8EDDA207328D800316679 /* BinanceWSApi.ios */,
+				8BD8EDEE20732AB900316679 /* BinanceWSApi.watchos */,
+				8BD8EDFE20732AEB00316679 /* BinanceWSApi.tvos */,
+				8BD8EE0E20732B1800316679 /* BinanceWSApi.macos */,
 			);
 		};
 /* End PBXProject section */
@@ -336,11 +573,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6B2EAD2058B46600B13CAA /* snippets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8B6B2E642058862E00B13CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDD9207328D800316679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDED20732AB900316679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDFD20732AEB00316679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EE0D20732B1800316679 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,6 +632,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6B2E6C2058862E00B13CAA /* BinanceWSApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDD6207328D800316679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDEA20732AB900316679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EDFA20732AEB00316679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD8EE0A20732B1800316679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +805,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.cbret.BinanceWSApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -537,6 +830,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.cbret.BinanceWSApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -571,6 +865,193 @@
 			};
 			name = Release;
 		};
+		8BD8EDE0207328D800316679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BinanceWSApi.ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BD8EDE1207328D800316679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BinanceWSApi.ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BD8EDF520732ABA00316679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BinanceWSApi.watchos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		8BD8EDF620732ABA00316679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BinanceWSApi.watchos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		8BD8EE0520732AEC00316679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BinanceWSApi.tvos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		8BD8EE0620732AEC00316679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BinanceWSApi.tvos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BD8EE1520732B1800316679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BinanceWSApi.macos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-macos";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8BD8EE1620732B1800316679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MHA75LWVGT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BinanceWSApi.macos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cbret.BinanceWSApi-macos";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,6 +1078,42 @@
 			buildConfigurations = (
 				8B6B2E752058862E00B13CAA /* Debug */,
 				8B6B2E762058862E00B13CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD8EDE4207328D800316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD8EDE0207328D800316679 /* Debug */,
+				8BD8EDE1207328D800316679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD8EDF420732ABA00316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD8EDF520732ABA00316679 /* Debug */,
+				8BD8EDF620732ABA00316679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD8EE0420732AEC00316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD8EE0520732AEC00316679 /* Debug */,
+				8BD8EE0620732AEC00316679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD8EE1420732B1800316679 /* Build configuration list for PBXNativeTarget "BinanceWSApi.macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD8EE1520732B1800316679 /* Debug */,
+				8BD8EE1620732B1800316679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

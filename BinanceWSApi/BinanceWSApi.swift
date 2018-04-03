@@ -7,10 +7,14 @@ public class BinanceWSApi {
     var context: NSManagedObjectContext?
     var socket: WebSocket
     init(streams endpoints:[String]) {
-        socket = WebSocket(url: baseURL.appendingPathComponent(endpoints.reduce("") { a, b in "\(a)/\(b)" }))
-        socket.delegate = self
-        socket.connect()
-        Swift.print(baseURL.appendingPathComponent(endpoints.reduce("") { a, b in "\(a)/\(b)" }))
+        if (endpoints.count > 0) {
+            socket = WebSocket(url: baseURL.appendingPathComponent(endpoints.reduce("") { a, b in "\(a)/\(b)" }))
+            socket.delegate = self
+            socket.connect()
+            Swift.print(baseURL.appendingPathComponent(endpoints.reduce("") { a, b in "\(a)/\(b)" }))
+        } else {
+            socket = WebSocket(url: baseURL)
+        }
     }
     private func newConnection(to endpoints:[String]) {
         if (socket.isConnected) {
